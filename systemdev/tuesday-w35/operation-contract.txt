@@ -1,0 +1,35 @@
+Contract01:  submitPin
+
+Operation: submitPin(cardID: String, pin: int)
+
+Cross Reference: Withdrawal Money
+
+Preconditions: None
+
+Postcondition: 
+
+- Card was validated
+- Card instance card is initialised
+- card.type was set based on card type
+- Data about accounts are pulled
+    - Customer's accounts were created as account instance of class Account
+    - account.name, account.uid, account.amount is saved in the instance account
+    - Created account instances were initialised in the card instance.
+
+Contract02:  withdrawMoney
+
+Operation: withdrawMoney(amount: Double, cardType: Card)
+
+Cross Reference: Withdrawal Money
+
+Preconditions: 
+
+- Customer has validated the card
+- card has associated account instance
+
+Postcondition: 
+
+- Amount is deducted from account.amount
+- Withdrawal was associated with current ATM, and logged with timestamp and amount
+    - Possibly log failed validation attempts
+- Data about accounts was pulled
