@@ -1,0 +1,42 @@
+Coffee Exercises.
+
+Opg1. Select the order id and customers phone number for all orders of product id 3.
+  
+  
+Opg2. Select product name and order time for Espresso coffees sold between 1 feb 2021 and 1 marts 2021.
+  
+
+Opg3. Select the product name and price and order time for all orders from females in january 2021.
+
+ 
+Opg4. Select first name and phone number for all females who have a last name of Bluth.
+  
+
+Opg5. From products table, select the name for all products that have a price greater than 24 or a coffee origin of Sri Lanka.
+  
+
+Opg6. How many male customers don't have a phone number entered into the customers table.
+
+
+Opg7. From the products table, select the name and price of all products with a coffee
+  origin equal to Columbia or Sri Lanka. Ordered by name from A-Z.
+  
+
+Opg8. From the orders table, select all the orders from February 2021 for customers with id of 2,4,6 or 8.
+  
+  
+Opg9. From the customers table, select the first name and phone number of all customers
+  whos last name contains the pattern 'ar'.
+
+
+Opg10. From the customers table, select distinct last names and order alphabetically from A-Z.
+
+
+
+Opg11. From the orders table, select the first 3 orders placed by customer with id 1, in February 2021.
+  
+
+
+Opg12. From the products table, select the name, price and coffee origin but rename the price to retail_price in the results set.
+
+
