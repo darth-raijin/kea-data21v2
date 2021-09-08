@@ -153,8 +153,42 @@ OR p.country = "Sri Lanka";
 SELECT COUNT(*) 
 FROM customers c
 WHERE c.gender = "M"
-AND c.phonenum IS NULL
+AND c.phonenum IS NULL;
 
 # Exercise 07
+SELECT name, price, country 
+FROM products p
+WHERE p.country = "Sri Lanka"
+OR p.country = "Columbia"
+ORDER BY p.name;
+
+# Exercise 08
+SELECT * 
+FROM orders o
+WHERE o.orderdttm >= '2021-02-01 00:00:00' 
+AND o.orderdttm <= '2021-03-01 00:00:00'
+AND o.customerid = 2 OR 4 OR 6 OR 8;
+
+# Exercise 09
+SELECT firstname, lastname, phonenum
+FROM customers c
+WHERE c.lastname LIKE "%ar%";
+
+# Exercise 10
+SELECT DISTINCT lastname
+FROM customers c
+ORDER BY c.lastname;
+
+# Exercise 11
+SELECT * 
+FROM orders o
+WHERE o.customerid = 1
+AND o.orderdttm >= '2021-02-01 00:00:00' 
+AND o.orderdttm <= '2021-03-01 00:00:00';
+
+# Exercise 12
+SELECT name, price as retail_price ,country
+FROM products
+
 
 
