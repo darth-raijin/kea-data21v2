@@ -255,3 +255,16 @@ WHERE s.starttime LIKE "2017-10%";
 
 -- EXERCISE SET 2
 
+# Exercise 01
+# Select customer id and count number of reserved seats
+SELECT *, COUNT(*) total_reservations FROM bookings b
+	LEFT JOIN reservedseats r
+	ON b.bookingid = r.bookingid
+WHERE b.customerid = 2;
+
+# Exercise 02
+# Select film name and count number of screenings for movies over 120 minutes
+SELECT * 
+FROM screenings
+LEFT JOIN
+
