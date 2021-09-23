@@ -264,7 +264,14 @@ WHERE b.customerid = 2;
 
 # Exercise 02
 # Select film name and count number of screenings for movies over 120 minutes
-SELECT * 
-FROM screenings
-LEFT JOIN
+SELECT *, COUNT(*) total_screenings
+FROM films f
+LEFT JOIN screenings s
+ON f.filmid = s.filmid
+WHERE f.length > 120
+GROUP BY name;
 
+-- Sub Query
+
+# Exercise 01
+# Select name and length for films, with length larger than the average
