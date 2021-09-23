@@ -1,3 +1,5 @@
+<!--Ideelt set skulle denne arve fra index.html for at undgå at skrive det samme flere gange-->
+
 <!DOCTYPE html>
 <html lang="en" xmlns:th="https://www.thymeleaf.org">
 <head>
@@ -12,16 +14,12 @@
 
     <section class="hero is-primary">
         <div class="hero-body">
-          <p class="title">
-            Hello KEA
-          </p>
+          <p class="title" th:text="'Hello, ' + ${name} + '!'">
           <p class="subtitle">
-            Mandatory Spring exercise
+            Exercise 1.2
           </p>
         </div>
       </section>
-    <!-- TODO CREATE HERO, IF FRIDAY GREEN HERO IF NOT RED -->
-
     <div id="content">
     </div>
 </body>
